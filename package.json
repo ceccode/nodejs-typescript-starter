@@ -1,0 +1,38 @@
+{
+  "name": "nodejs-typescript-starter",
+  "version": "0.1.0",
+  "description": "Starter kit for working with NodeJS and Typescript",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build && node dist",
+    "dev": "npm run build && npm run watch-ts & nodemon dist",
+    "build": "npm run build-ts && npm run lint-ts",
+    "build-ts": "tsc",
+    "watch-ts": "tsc --watch",
+    "lint-ts": "tslint -c tslint.json 'src/**/*.ts'",
+    "test": "tsc && mocha -r ts-node/register 'src/**/*.spec.ts'"
+  },
+  "keywords": [
+    "nodejs",
+    "typescript",
+    "starter",
+    "vscode"
+  ],
+  "author": "Francesco Falanga <falanga.fra@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.0.4",
+    "@types/dotenv": "^4.0.2",
+    "@types/mocha": "^2.2.44",
+    "@types/node": "^8.0.47",
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1",
+    "nodemon": "^1.12.1",
+    "ts-node": "^3.3.0",
+    "tslint": "^5.8.0",
+    "typescript": "^2.5.3"
+  }
+}
