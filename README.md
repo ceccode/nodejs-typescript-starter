@@ -3,6 +3,7 @@
 > This repository is a starter kit for working with NodeJS and Typescript.
 
 [![Build Status](https://travis-ci.org/ceccode/nodejs-typescript-starter.svg?branch=master)](https://travis-ci.org/ceccode/nodejs-typescript-starter)
+[![Dependency Status](https://david-dm.org/ceccode/nodejs-typescript-starter.svg)](https://david-dm.org/ceccode/nodejs-typescript-starter.svg)
 
 ## Getting Started
 
